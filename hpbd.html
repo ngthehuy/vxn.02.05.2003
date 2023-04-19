@@ -19,6 +19,7 @@
 
         body {
             background: #e74;
+           
             overflow: hidden;
             background-image: linear-gradient(to bottom, #190e14, #0d0d4b 30%, #c76075 80%, #e9b64b 95%);
             background-image: radial-gradient(circle at center bottom, #e9b64b, #c76075 15%, #0d0d4b 75%, #190e14 90%);
@@ -37,7 +38,7 @@
 
         div#beach {
             background-image: url(https://dl.dropbox.com/s/oe0oce2udq44bj5/beachsil2.png);
-            /* background-size: cover; */
+            background-size: cover;
             background-position: bottom right;
             background-size: 1700px;
             background-repeat: no-repeat;
@@ -408,7 +409,7 @@
 
         .step-4 .icons .row span,
         .step-3 .icons .row span {
-            /*animation: wobble 0.6s linear infinite forwards;*/
+            animation: wobble 0.6s linear infinite forwards;
             color: #c6e2ff;
             animation: neon 0.08s ease-in-out infinite alternate;
         }
@@ -517,7 +518,9 @@
 
 
         #balloon-container {
+            
             height: 100vh;
+            width:100%;
             padding: 1em;
             box-sizing: border-box;
             display: flex;
@@ -574,7 +577,7 @@
 </head>
 
 <body>
-    <iframe src="https://www.nhaccuatui.com/mh/background/0WjD9CN9Xbg2" width="1" height="1" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+    <!--<iframe src="https://www.nhaccuatui.com/mh/background/0WjD9CN9Xbg2" width="1" height="1" frameborder="0" allowfullscreen allow="autoplay"></iframe>-->
 
     <canvas id="canvas"></canvas>
     <div id="merrywrap" class="merrywrap">
@@ -608,9 +611,9 @@
 
             opts = {
                 strings: ['HAPPY', 'BIRTHDAY!'],
-                charSize: 120,
-                charSpacing: 120,
-                lineHeight: 120,
+                charSize: 60,
+                charSpacing: 60,
+                lineHeight: 60,
 
                 cx: w / 2,
                 cy: h / 2,
