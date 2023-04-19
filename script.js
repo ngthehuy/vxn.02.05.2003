@@ -1,7 +1,7 @@
 ﻿const countdown = document.querySelector('.countdown');
 
 const interval = setInterval(() => {
-const dealine = new Date(2023, 4, 2, 00, 00, 00);
+const dealine = new Date(2023, 2, 2, 00, 00, 00);
 const current = new Date();
 const diff = dealine - current;
 const days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -15,4 +15,12 @@ const seconds = Math.floor((diff / 1000) % 60);
 <div data-content = "Minutes">${minutes.length === 1 ? `0${minutes}` : minutes}</div>
 <div data-content = "Seconds">${seconds.length === 1 ? `0${seconds}` : seconds}</div>
 `;
-},1000)
+    if (diff < 0) {
+        clearInterval(interval);
+        countdown.innerHTML = "<a>HERE WE GO!!</a>";
+    }
+const results = document.querySelector('a');
+results.setAttribute('href', 'hpbd.html');
+}, 1000)
+
+

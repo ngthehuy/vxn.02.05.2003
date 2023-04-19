@@ -12,6 +12,9 @@ body {
     background-image: url('Floral-May-Desktop-Wallpaper-650x366.jpg');
     background-size: cover;
 }
+.about{
+
+}
 .container {
     width: 100%;
     height: 100vh;
@@ -25,7 +28,7 @@ body {
     text-align:center;
     color:#ddd;
 }
-h1 {
+ h1 {
     font-size: 8rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -37,15 +40,15 @@ h1 {
 }
       ul{
          display:flex;
-         transform:translate(-26px,0);
+         transform:translate(126px,0);
          flex-direction:row;
      }
          ul li {
             font-size: 2.4rem;
             list-style: none;
             margin: 0 6rem;
-            color:#000000;
-            font-weight:600;
+            color: #000000;
+            font-weight: 600;
         }
     .countdown {
         display:flex;
@@ -92,3 +95,9 @@ h1 {
     }
            
 }
+        a{
+            font-size:8rem;
+            color:red !important;
+            text-decoration:none;
+        }
+       
