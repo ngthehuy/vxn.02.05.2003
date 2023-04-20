@@ -197,8 +197,8 @@
         .icons {
             position: absolute;
             left: 10px;
-            /*top:50%;
-        width: 100%;*/
+            /**top:50%;
+        width: 100%;**/
             height: auto;
             transform: translateY(10px) rotate(-20deg);
         }
@@ -577,8 +577,10 @@
 </head>
 
 <body>
-    <!--<iframe src="https://www.nhaccuatui.com/mh/background/0WjD9CN9Xbg2" width="1" height="1" frameborder="0" allowfullscreen allow="autoplay"></iframe>-->
-
+   
+    <audio controls autoplay>
+        <source src="Sinh%20Nh%e1%ba%adt%20-%20HIEUTHUHAI.mp3" type="audio/mpeg" />
+    </audio>
     <canvas id="canvas"></canvas>
     <div id="merrywrap" class="merrywrap">
         <div class="giftbox">
@@ -591,7 +593,7 @@
         </div>
 
     </div>
-    <canvas id="c"></canvas>
+    <canvas id="c" width="1000" height="500"></canvas>
     <div id="balloon-container">
 
 
@@ -611,9 +613,10 @@
 
             opts = {
                 strings: ['HAPPY', 'BIRTHDAY!'],
-                charSize: 50,
+                charSize: 30,
                 charSpacing: 30,
                 lineHeight: 50,
+
 
                 cx: w / 2,
                 cy: h / 2,
