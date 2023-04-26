@@ -1,7 +1,7 @@
 ﻿const countdown = document.querySelector('.countdown');
 
 const interval = setInterval(() => {
-const dealine = new Date(2023, 2, 2, 00, 00, 00);
+const dealine = new Date(2023, 4, 2, 00, 00, 00);
 const current = new Date();
 const diff = dealine - current;
 const days = Math.floor(diff / (1000 * 60 * 60 * 24));
